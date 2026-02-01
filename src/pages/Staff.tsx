@@ -1,6 +1,13 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { Users } from "lucide-react";
+import bright from "../../public/assets/bright.jpeg"
+import fale from "../../public/assets/fale.jpeg"
+import idris from "../../public/assets/idris.jpeg"
+import okeme from "../../public/assets/okeme.jpeg"
+import jamilu from "../../public/assets/jamilu.jpeg"
+import lavi from "../../public/assets/lavi.jpeg"
+import aminuumar from "../../public/assets/aminuumar.jpeg"
+import danladi from "../../public/assets/danladi.jpeg"
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -9,14 +16,14 @@ const fadeIn = {
 
 export default function Staff() {
   const staff = [
-    { name: "Blessing Udoh", role: "Medical Coordinator", img: "https://images.unsplash.com/photo-1559839734-2b71f183ef0e?w=400&q=80" },
-    { name: "John Bello", role: "Logistics Manager", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
-    { name: "Chidi Okafor", role: "Public Relations", img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" },
-    { name: "Esther Williams", role: "Patient Advocate", img: "https://images.unsplash.com/photo-1567532939604-b6c5b0ad2e01?w=400&q=80" },
-    { name: "Dr. Ibrahim Musa", role: "Clinical Researcher", img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80" },
-    { name: "Linda Azikiwe", role: "Fundraising Officer", img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" },
-    { name: "Samuel Tunde", role: "IT Specialist", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-    { name: "Grace Opara", role: "Volunteer Coordinator", img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" },
+    { name: "Bright Ibrahim Joseph", role: " ", img: bright },
+    { name: "Nr. Fale Nana Favour", role: " ", img: fale },
+    { name: "Nr. Lagu Idris", role: " ", img: idris },
+    { name: "Dr. Okeme Arome", role: " ", img: okeme },
+    { name: "Nr. Jamilu Yayawa", role: " ", img: jamilu },
+    { name: "Nr. Lavi Tanko Rikin", role: " ", img: lavi },
+    { name: "Dr. Aminu Umar", role: " ", img: aminuumar },
+    { name: "Prof. Adamu Danladi Bojude", role: " ", img: danladi },
   ];
 
   return (

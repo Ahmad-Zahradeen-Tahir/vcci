@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, HeartHandshake } from "lucide-react";
 import { Button } from "../ui/Button (1)";
+import logo from "../../../public/assets/cciLogo.jpeg";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +39,7 @@ export function Navbar() {
         {/* Logo Area */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
-             <HeartHandshake size={20} />
+             <img src={logo} width={200} />
           </div>
           <div className="flex flex-col">
             <span className={`text-xl font-display font-bold leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900 md:text-slate-900'}`}>

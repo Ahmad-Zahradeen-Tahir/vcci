@@ -1,5 +1,10 @@
 import { Link } from "wouter";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { HeartHandshake, Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -13,22 +18,26 @@ export function Footer() {
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
                 <HeartHandshake size={20} />
               </div>
-              <span className="text-xl font-display font-bold text-white">CCI Nigeria</span>
+              <span className="text-xl font-display font-bold text-white">
+                CCI Nigeria
+              </span>
             </div>
             <p className="text-slate-400 leading-relaxed">
-              Dedicated to reducing the cancer burden in Nigeria through awareness, 
-              screening, and patient support initiatives.
+              Dedicated to reducing the cancer burden in Nigeria through
+              awareness, screening, and patient support initiatives.
             </p>
             <div className="flex gap-4">
-              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
-                >
-                  <Icon size={16} />
-                </a>
-              ))}
+              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
+                (Icon, i) => (
+                  <a
+                    key={i}
+                    href="#"
+                    className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                  >
+                    <Icon size={16} />
+                  </a>
+                )
+              )}
             </div>
           </div>
 
@@ -44,7 +53,10 @@ export function Footer() {
                 { label: "Donate", href: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-slate-400 hover:text-primary transition-colors">
+                  <Link
+                    href={link.href}
+                    className="text-slate-400 hover:text-primary transition-colors"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -59,19 +71,27 @@ export function Footer() {
               <li className="flex items-start gap-4">
                 <MapPin className="text-primary shrink-0 mt-1" size={20} />
                 <span className="text-slate-400">
-                  123 Health Avenue, Victoria Island,<br />Lagos, Nigeria
+                  Cancer Consciousness Initiative Threshold Plaza, Plot C47,
+                  <br />
+                  Gwarinpa – FCT Abuja.
                 </span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="text-primary shrink-0" size={20} />
-                <a href="tel:+2349160462316" className="text-slate-400 hover:text-white">
+                <a
+                  href="tel:+2349160462316"
+                  className="text-slate-400 hover:text-white"
+                >
                   +234 916 046 2316
                 </a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="text-primary shrink-0" size={20} />
-                <a href="mailto:info@ccinitiativenig.org" className="text-slate-400 hover:text-white">
-                  info@ccinitiativenig.org
+                <a
+                  href="mailto:cciInitiativenig@gmail.com"
+                  className="text-slate-400 hover:text-white"
+                >
+                  cciInitiativenig@gmail.com
                 </a>
               </li>
             </ul>
@@ -80,11 +100,13 @@ export function Footer() {
           {/* Newsletter */}
           <div>
             <h3 className="text-white text-lg mb-6">Newsletter</h3>
-            <p className="text-slate-400 mb-4">Subscribe to our newsletter for updates and health tips.</p>
+            <p className="text-slate-400 mb-4">
+              Subscribe to our newsletter for updates and health tips.
+            </p>
             <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="Your email address" 
+              <input
+                type="email"
+                placeholder="Your email address"
                 className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
               />
               <button className="w-full py-3 px-4 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors">
@@ -95,7 +117,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-          <p>© {new Date().getFullYear()} Comprehensive Cancer Initiative. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Comprehensive Cancer Initiative. All
+            rights reserved.
+          </p>
         </div>
       </div>
     </footer>

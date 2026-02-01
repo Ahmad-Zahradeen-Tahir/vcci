@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "../components/ui/Button (1)";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
+import greet from "../../public/assets/p2.jpeg";
+import pt from "../../public/assets/pt1.jpeg";
 
 // Fade in animation variant
 const fadeIn = {
@@ -91,7 +93,7 @@ export default function Home() {
                   {/* Community Awareness */}
                   <div className="h-48 rounded-2xl overflow-hidden shadow-xl relative group">
                     <img 
-                      src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80" 
+                      src={pt}
                       alt="Community health awareness" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
@@ -101,7 +103,7 @@ export default function Home() {
                   {/* Medical Screening */}
                   <div className="h-48 rounded-2xl overflow-hidden shadow-xl relative group">
                     <img 
-                      src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80" 
+                      src={greet} 
                       alt="Medical screening" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />

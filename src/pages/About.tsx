@@ -2,7 +2,15 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Users, Award, History, Target, ArrowRight } from "lucide-react";
-import { Button } from "../components/ui/Button";
+import { Button } from "../components/ui/Button (1)";
+import p4 from "../../public/assets/p4.jpeg"
+import hannatu from "../../public/assets/hannatu.jpeg"
+import amina from "../../public/assets/amina.jpeg"
+import aminu from "../../public/assets/aminu.jpeg"
+import nicholas from "../../public/assets/nicholas.jpeg"
+import saad from "../../public/assets/saad.jpeg"
+import fbello from "../../public/assets/fbello.jpeg"
+
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -41,7 +49,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full" />
               <img 
-                src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80" 
+                src={p4}
                 alt="Medical meeting" 
                 className="rounded-2xl shadow-2xl relative z-10 w-full"
               />
@@ -117,31 +125,41 @@ export default function About() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display mb-4">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-display mb-4">Meet Our Board</h2>
             <p className="text-slate-600">The passionate individuals leading the fight.</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
             {[
               { 
-                name: "Dr. Adebayo Ogunlesi", 
-                role: "Executive Director", 
-                img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" 
+                name: "Prof. Sa'ad Ahmed", 
+                role: "Chairman", 
+                img: saad 
               },
               { 
-                name: "Sarah Nwosu", 
-                role: "Head of Operations", 
-                img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" 
+                name: "Dr. Hannatu Ayuba Usman", 
+                role: "Member", 
+                img: hannatu 
               },
               { 
-                name: "Michael Okon", 
-                role: "Community Outreach", 
-                img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&q=80" 
+                name: "Dr. Fatima Bello", 
+                role: "Member", 
+                img: fbello 
               },
               { 
-                name: "Dr. Zainab Ahmed", 
-                role: "Chief Oncologist", 
-                img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80" 
+                name: "Amina Ayuba", 
+                role: "Member", 
+                img: amina 
+              },
+              { 
+                name: "Aminu Ayama", 
+                role: "Member", 
+                img: aminu
+              },
+              { 
+                name: "Dr. Nicholas Kwampi", 
+                role: "Member", 
+                img: nicholas 
               },
             ].map((member, idx) => (
               <motion.div 
