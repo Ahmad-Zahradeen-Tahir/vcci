@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "../components/ui/Button";
+import { Button } from "../components/ui/Button (1)";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
 
 // Fade in animation variant

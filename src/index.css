@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Outfit:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +6,8 @@
 
 :root {
   /* Typography */
-  --font-body: 'DM Sans', sans-serif;
-  --font-display: 'Outfit', sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-display: "Outfit", sans-serif;
 
   /* Color Palette - Professional NGO Blue & Cancer Awareness Pink/Purple */
   /* Primary Blue - Trust, Medical, Professional */
@@ -25,7 +25,7 @@
   /* Neutral tones */
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;
-  
+
   --muted: 210 40% 96.1%;
   --muted-foreground: 215.4 16.3% 46.9%;
 
@@ -43,13 +43,18 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     @apply font-bold tracking-tight text-slate-900;
   }
@@ -59,7 +64,7 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section-padding {
     @apply py-16 md:py-24;
   }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, HeartHandshake } from "lucide-react";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/Button (1)";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
