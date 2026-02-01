@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, HeartHandshake } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/buttona";
 import logo from "../../../public/assets/cciLogo.jpeg";
 
