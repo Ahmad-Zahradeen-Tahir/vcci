@@ -11,7 +11,6 @@ import {
   DialogTrigger 
 } from "../components/ui/dialog";
 import { Info } from "lucide-react";
-import { ScrollArea } from "../components/ui/scroll-area";
 
 const projects = [
   {
@@ -227,7 +226,7 @@ export default function Projects() {
             Every donation goes directly towards funding screenings and treatment for those who need it most.
           </p>
           <Link href="/contact">
-            <Button size="lg" variant="accent" className="rounded-full shadow-lg shadow-accent/20 px-10">
+            <Button size="lg" variant="default" className="rounded-full shadow-lg shadow-accent/20 px-10">
               Donate to CCI
             </Button>
           </Link>
