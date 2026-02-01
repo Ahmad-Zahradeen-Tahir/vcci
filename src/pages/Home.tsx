@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "../components/ui/Button (1)";
+import { Button } from "../components/ui/buttona";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
 import greet from "../../public/assets/p2.jpeg";
 import pt from "../../public/assets/pt1.jpeg";
