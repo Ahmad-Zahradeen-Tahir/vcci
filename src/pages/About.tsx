@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Users, Award, History, Target, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/buttona";
-import p4 from "../../public/assets/p4.jpeg";
+// import p4 from "../../public/assets/p4.jpeg";
 import hannatu from "../../public/assets/hannatu.jpeg";
 import amina from "../../public/assets/amina.jpeg";
 import aminu from "../../public/assets/aminu.jpeg";

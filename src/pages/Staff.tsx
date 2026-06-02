@@ -1,23 +1,23 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import bright from "../../public/assets/bright.jpeg"
-import fale from "../../public/assets/fale.jpeg"
-import idris from "../../public/assets/idris.jpeg"
-import okeme from "../../public/assets/okeme.jpeg"
-import jamilu from "../../public/assets/jamilu.jpeg"
-import lavi from "../../public/assets/lavi.jpeg"
-import aminuumar from "../../public/assets/aminuumar.jpeg"
-import danladi from "../../public/assets/danladi.jpeg"
-import abubakaraliyu from "../../public/assets/abubakaraliyu.jpeg"
-import aminuibrahim from "../../public/assets/aminuibrahim.jpeg"
-import ekhibise from "../../public/assets/ekhibise.jpeg"
-import halimaaliyu from "../../public/assets/halimaaliyu.jpeg"
-import hauwaidris from "../../public/assets/hauwaidris.jpeg"
-import ibrahimlawal from "../../public/assets/ibrahimlawal.jpeg"
-import jamilabayero from "../../public/assets/jamilabayero.jpeg"
-import madu from "../../public/assets/madu.jpeg"
-import maimunaharuna from "../../public/assets/maimunaharuna.jpeg"
-import markwien from "../../public/assets/markwien.jpeg"
+// import bright from "../../public/assets/bright.jpeg"
+// import fale from "../../public/assets/fale.jpeg"
+// import idris from "../../public/assets/idris.jpeg"
+// import okeme from "../../public/assets/okeme.jpeg"
+// import jamilu from "../../public/assets/jamilu.jpeg"
+// import lavi from "../../public/assets/lavi.jpeg"
+// import aminuumar from "../../public/assets/aminuumar.jpeg"
+// import danladi from "../../public/assets/danladi.jpeg"
+// import abubakaraliyu from "../../public/assets/abubakaraliyu.jpeg"
+// import aminuibrahim from "../../public/assets/aminuibrahim.jpeg"
+// import ekhibise from "../../public/assets/ekhibise.jpeg"
+// import halimaaliyu from "../../public/assets/halimaaliyu.jpeg"
+// import hauwaidris from "../../public/assets/hauwaidris.jpeg"
+// import ibrahimlawal from "../../public/assets/ibrahimlawal.jpeg"
+// import jamilabayero from "../../public/assets/jamilabayero.jpeg"
+// import madu from "../../public/assets/madu.jpeg"
+// import maimunaharuna from "../../public/assets/maimunaharuna.jpeg"
+// import markwien from "../../public/assets/markwien.jpeg"
 import t1 from "../../public/assets/t1.jpeg"
 import t2 from "../../public/assets/t2.jpeg"
 import t3 from "../../public/assets/t3.jpeg"
@@ -28,26 +28,26 @@ const fadeIn = {
 };
 
 export default function Staff() {
-  const staff = [
-    { name: "Bright Ibrahim Joseph", role: "System Administrator", img: bright },
-    { name: "Mark Wien", role: "Founder PocketPatientMD", img: markwien },
-    { name: "Nr. Fale Nana Favour", role: "Nurse", img: fale },
-    { name: "Nr. Lagu Idris", role: "Nurse", img: idris },
-    { name: "Dr. Okeme Arome", role: "Doctor", img: okeme },
-    { name: "Nr. Jamilu Yayawa", role: "Nurse", img: jamilu },
-    { name: "Nr. Lavi Tanko Rikin", role: "Pioneer Patient Navigator", img: lavi },
-    { name: "Dr. Aminu Umar", role: "Doctor", img: aminuumar },
-    { name: "Prof. Adamu Danladi Bojude", role: "Chief Consultant Radiation & Clinical Oncologist", img: danladi },
-    { name: "Barr. Abubakar Aliyu", role: "Legal Advisor", img: abubakaraliyu },
-    { name: "Mr Aminu Ibrahim", role: "ICT SystemAdmin", img: aminuibrahim },
-    { name: "Dr Bright Ekhibise", role: "Volunteer Coordinator", img: ekhibise },
-    { name: "Halima Aliyu", role: "ICT SystemAdmin", img: halimaaliyu },
-    { name: "Pharm. Hauwa Idris", role: "Peer Navigator", img: hauwaidris },
-    { name: "Mr. Ibrahim Lawal", role: "Sign Language /Interpreter, Patient Navigator", img: ibrahimlawal },
-    { name: "Dr Jamillah Bayero Okpatuma", role: "Consultant Gastroenterologist", img: jamilabayero },
-    { name: "Alh. Madu Pindar", role: "ICT SystemAdmin", img: madu },
-    { name: "Maimuna Haruna", role: "Peer Navigator", img: maimunaharuna },
-  ];
+  // const staff = [
+  //   { name: "Bright Ibrahim Joseph", role: "System Administrator", img: bright },
+  //   { name: "Mark Wien", role: "Founder PocketPatientMD", img: markwien },
+  //   { name: "Nr. Fale Nana Favour", role: "Nurse", img: fale },
+  //   { name: "Nr. Lagu Idris", role: "Nurse", img: idris },
+  //   { name: "Dr. Okeme Arome", role: "Doctor", img: okeme },
+  //   { name: "Nr. Jamilu Yayawa", role: "Nurse", img: jamilu },
+  //   { name: "Nr. Lavi Tanko Rikin", role: "Pioneer Patient Navigator", img: lavi },
+  //   { name: "Dr. Aminu Umar", role: "Doctor", img: aminuumar },
+  //   { name: "Prof. Adamu Danladi Bojude", role: "Chief Consultant Radiation & Clinical Oncologist", img: danladi },
+  //   { name: "Barr. Abubakar Aliyu", role: "Legal Advisor", img: abubakaraliyu },
+  //   { name: "Mr Aminu Ibrahim", role: "ICT SystemAdmin", img: aminuibrahim },
+  //   { name: "Dr Bright Ekhibise", role: "Volunteer Coordinator", img: ekhibise },
+  //   { name: "Halima Aliyu", role: "ICT SystemAdmin", img: halimaaliyu },
+  //   { name: "Pharm. Hauwa Idris", role: "Peer Navigator", img: hauwaidris },
+  //   { name: "Mr. Ibrahim Lawal", role: "Sign Language /Interpreter, Patient Navigator", img: ibrahimlawal },
+  //   { name: "Dr Jamillah Bayero Okpatuma", role: "Consultant Gastroenterologist", img: jamilabayero },
+  //   { name: "Alh. Madu Pindar", role: "ICT SystemAdmin", img: madu },
+  //   { name: "Maimuna Haruna", role: "Peer Navigator", img: maimunaharuna },
+  // ];
 
   return (
     <>

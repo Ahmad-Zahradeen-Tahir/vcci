@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "../components/ui/buttona";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
-import greet from "../../public/assets/p2.jpeg";
+// import greet from "../../public/assets/p2.jpeg";
 import pt from "../../public/assets/pt1.jpeg";
 import backgb from "../../public/assets/backgb.jpeg";
 import prtfg from "../../public/assets/prntfge.jpeg";
