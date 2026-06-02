@@ -46,7 +46,7 @@ export function Navbar() {
               CCI
             </span>
             <span className="text-[0.65rem] uppercase tracking-wider font-semibold text-primary">
-              Comprehensive Cancer Initiative
+              Cancer Consciousness Initiative
             </span>
           </div>
         </Link>

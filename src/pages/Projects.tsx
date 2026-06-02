@@ -2,83 +2,114 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
 import { Link } from "wouter";
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogDescription, 
-  DialogHeader, 
-  DialogTitle, 
-  DialogTrigger 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from "../components/ui/dialog";
 import { Info } from "lucide-react";
 
 const projects = [
   {
-    title: "Rural Screening Camps",
+    title: "The Spirit of Pinktober",
     category: "Outreach",
-    shortDescription: "Bringing free cervical and breast cancer screening to remote villages in Northern Nigeria.",
-    description: "Bringing free cervical and breast cancer screening to remote villages in Northern Nigeria. Our medical teams travel to hard-to-reach areas, providing essential diagnostic services to women who otherwise have no access to oncology care. Each camp serves approximately 200-300 women, offering not just screenings but also critical education on self-examination and lifestyle changes to reduce risk. We provide immediate counseling and follow-up referrals for those with suspicious findings, ensuring no one is left behind in the diagnostic process.",
-    image: "https://images.unsplash.com/photo-1576091160550-217358c7db81?w=800&q=80",
+    shortDescription:
+      "Pinktober is the annual commemoration of the Breast Cancer month October with high level Advocacy events.",
+    description:
+      "Pinktober is the annual commemoration of the Breast Cancer month October with high level Advocacy events. An event carried out in states where the TeleOncology Hub operates, it includes Townhall Meetings and MegaRally Cancer Walk to enable awareness about breast cancer, enable breast cancer screening in designated places, healthworker training, community engagement and policy dialogue with stakeholders. This raises awareness, reduces stigma and encourages community support for the persons living with cancer.",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-217358c7db81?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1584362924004-23340393f3bd?w=400&q=80",
-      "https://images.unsplash.com/photo-1579154234411-7801f0107583?w=400&q=80"
-    ]
+      "https://images.unsplash.com/photo-1579154234411-7801f0107583?w=400&q=80",
+    ],
   },
   {
-    title: "School Awareness Drives",
+    title: "TeleOncology Hub",
     category: "Education",
-    shortDescription: "Educating high school students about lifestyle choices and early warning signs.",
-    description: "Educating high school students about lifestyle choices and early warning signs. Our youth-focused programs aim to instill healthy habits from an early age, debunking common myths about cancer in the local community. We use interactive workshops, peer-led discussions, and modern digital tools to engage students. The curriculum covers the importance of nutrition, physical activity, and the dangers of tobacco and alcohol consumption. By empowering the youth, we create ambassadors for health within their own families and neighborhoods.",
-    image: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=800&q=80",
+    shortDescription:
+      "TeleOncology Hub increases access to specialist cancer care for patients in remote areas.",
+    description: "The Teleoncology Hub is a health system strengthening initiative and digital health innovation that provides specialist cancer care services remotely, bridging the gap in access to quality oncological care, particularly in underserved communities. The model comprises: (1)Telemedicine Consultations: Provider to Provider mode. Patients with their healthcare providers can connect with oncology experts remotely, reducing the need for travel and enabling timely medical interventions. (2)Virtual Multidisciplinary Team (MDT) Meetings: Healthcare professionals collaborate to discuss patient cases, ensuring comprehensive care, tailored treatment plans and improved treatment outcomes. Telemonitoring with a proactive electronic medical records PocketpatientMD enables the tracking of information and follow up after the MDT meetings, and (3)Patient Navigation Services: Trained patient navigators guide patients through the care process, facilitating prompt diagnoses, treatments, and follow-ups. Hospital patient navigation working in synchrony with the Community Patient Navigation Program when available in the state.",
+    image:
+      "https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80",
-      "https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?w=400&q=80"
-    ]
+      "https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?w=400&q=80",
+    ],
   },
   {
-    title: "Patient Support Fund",
+    title: "⁠⁠Melanoma Awareness Campaign",
     category: "Financial Aid",
-    shortDescription: "Providing financial assistance for chemotherapy and radiotherapy for low-income patients.",
-    description: "Providing financial assistance for chemotherapy and radiotherapy for low-income patients. Cancer treatment costs are often prohibitive for families in Nigeria, leading to catastrophic health expenditures. CCI's support fund steps in to cover essential treatment costs, transport to oncology centers, and basic nutritional support during recovery. We work closely with hospitals to identify the most vulnerable patients, ensuring that financial status is never a barrier to life-saving treatment. Our fund has supported hundreds of patients through their full course of therapy.",
-    image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
+    shortDescription:
+      "Fighting Melanoma, Surviving and Thriving",
+    description:
+      "Melanoma Awareness Campaign sparked at The Taraba Town hall Pinktober 2025  with storytelling by Melanoma Survivor Pharm Hauwa Baba Idris to the Townhall audience. Melanoma Awareness campaigns,  meetings, webinars, screening events etc to be conducted periodically. The fight against Melanoma is taken to the community as we train patient navigators to raise awareness in the community about skin lesions, chronic ulcers and leg lesions , images are sent to the community patient navigation coordinator who sends to the MDT. Persons with suspicious lesions are referred for further evaluation.",
+    image:
+      "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&q=80",
-      "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80"
-    ]
+      "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80",
+    ],
   },
   {
-    title: "Pink October Walk",
+    title: "Community Oncology",
     category: "Advocacy",
-    shortDescription: "Annual walkathon to raise awareness and funds for breast cancer research.",
-    description: "Annual walkathon to raise awareness and funds for breast cancer research. Every October, CCI organizes one of the largest advocacy events in the country, bringing together survivors, families, and supporters. The walk serves as a powerful symbol of solidarity and a platform to call for better cancer policies. Funds raised during the event are channeled directly into our community programs and research initiatives. It's a day of hope, celebration of life, and a renewal of our commitment to a cancer-free Nigeria.",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+    shortDescription:
+      "Providing access to equitable Cancer care given at the community level.",
+    description:
+      "Community Oncology is an area we are passionate about, enabling awareness, screening, early detection and referral of cancer cases and supporting care and survivorship care in the community level. The Community Patient Navigators are the trust builders, translators and advocates who enable the elimination of myths and stigma  while enabling the navigation of the patient with Cancer in the community. This is carried with support of the patient navigators in the tertiary hospitals.",
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&q=80",
-      "https://images.unsplash.com/photo-1459183885447-553a41af6844?w=400&q=80"
-    ]
+      "https://images.unsplash.com/photo-1459183885447-553a41af6844?w=400&q=80",
+    ],
   },
   {
-    title: "Oncology Training",
-    category: "Capacity Building",
-    shortDescription: "Training nurses and local health workers in palliative care and patient management.",
-    description: "Training nurses and local health workers in palliative care and patient management. Recognizing the shortage of specialized oncology staff, CCI provides professional development opportunities for frontline health workers. Our training modules include pain management, psychological support for patients and families, and early detection techniques. By strengthening the capacity of the local health workforce, we improve the quality of care available at the community level. Certified trainees become focal points for cancer care in their respective health centers.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
-      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80"
-    ]
-  },
-  {
-    title: "Research & Data",
+    title: "Capacity Training and Mentorship",
     category: "Science",
-    shortDescription: "Collecting data on cancer prevalence to inform national health policy.",
-    description: "Collecting data on cancer prevalence to inform national health policy. CCI's research arm focuses on understanding the specific challenges and trends of cancer in the Nigerian context. We conduct community surveys, collaborate with teaching hospitals for clinical data analysis, and publish findings to guide public health interventions. Our goal is to provide evidence-based recommendations to the Ministry of Health, advocating for more localized and effective cancer control strategies. Accurate data is the foundation of every successful health initiative.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    shortDescription:
+      "At CCI we enable capacity building , continuing education and mentorship enabling the mentoring of  future leaders in oncology.",
+    description:
+      "Our Program enables continuing education and mentorship. The program aligns with the WHO Patient Navigation , NCCN sub-Saharan harmonized Clinical practice guidelines, AACR Cancer Disparities Recommendations etc The resource persons from several leadership programs like The ASCO City Cancer Challenge Leadership Program for Women in Oncology LPWO, and Oncology Nursing Leadership Programs, American Cancer Society Building Expertise for Advocacy and Capacity for Oncology Navigation BEACON Initiative contribute to the training modules. This enables continous medical education and training to strengthen the healthcare workforce involved in the program.",
+    image:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1532187875605-2fe358a3d46a?w=400&q=80",
-      "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=400&q=80"
-    ]
-  }
+      "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=400&q=80",
+    ],
+  },
+  {
+    title: "Cancer ⁠Awareness Efforts",
+    category: "Capacity Building",
+    shortDescription:
+      "Cancer Awareness campaigns, Screening and Advocacy events are important in the right against cancer.",
+    description:
+      "coming soon",
+    image:
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+    ],
+  },
+  {
+    title: "Global Health",
+    category: "Collaboration",
+    shortDescription:
+      "Multisectoral collaboration is crucial in providing lasting sustainable solutions to the health system while enabling digital health innovation and networking.",
+    description:
+      "At CCI, we appreciate that Global Health strengthens Cancer care and Health Systems by providing standards, funding, training opportunities, technology and political push to make cancer care more equitable. CVI convened The ECHAlliance Nigerian Ecosystem launch which brought together different sector players locally and internationally in progressive discussions and subsequent collaborAction!. An interesting pitching session for digital innovators and Startups was a great highlight of the event. ",
+    image:
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+    ],
+  },
 ];
 
 export default function Projects() {
@@ -86,19 +117,25 @@ export default function Projects() {
     <>
       <Helmet>
         <title>Our Projects | Comprehensive Cancer Initiative</title>
-        <meta name="description" content="Explore our initiatives in cancer screening, awareness, and patient support." />
+        <meta
+          name="description"
+          content="Explore our initiatives in cancer screening, awareness, and patient support."
+        />
       </Helmet>
 
       <div className="bg-slate-50 pt-32 pb-16">
         <div className="container-custom">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <h1 className="text-4xl md:text-5xl font-display mb-6">Our Impact</h1>
+            <h1 className="text-4xl md:text-5xl font-display mb-6">
+              Our Impact
+            </h1>
             <p className="text-xl text-slate-600">
-              Real initiatives making a real difference in communities across Nigeria.
+              Real initiatives making a real difference in communities across
+              Nigeria.
             </p>
           </motion.div>
         </div>
@@ -117,9 +154,9 @@ export default function Projects() {
                 className="group rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full"
               >
                 <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
@@ -128,7 +165,7 @@ export default function Projects() {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     {project.title}
@@ -136,7 +173,7 @@ export default function Projects() {
                   <p className="text-slate-600 mb-6 flex-grow">
                     {project.shortDescription}
                   </p>
-                  
+
                   <div className="grid grid-cols-2 gap-3">
                     <Dialog>
                       <DialogTrigger asChild>
@@ -147,7 +184,9 @@ export default function Projects() {
                       </DialogTrigger>
                       <DialogContent className="sm:max-w-2xl h-[80vh] flex flex-col p-0 overflow-hidden">
                         <DialogHeader className="p-6 pb-0 flex-shrink-0">
-                          <DialogTitle className="text-2xl font-display">{project.title}</DialogTitle>
+                          <DialogTitle className="text-2xl font-display">
+                            {project.title}
+                          </DialogTitle>
                           <DialogDescription className="text-primary font-bold uppercase tracking-wider text-xs">
                             {project.category}
                           </DialogDescription>
@@ -155,9 +194,9 @@ export default function Projects() {
                         <div className="flex-grow overflow-y-auto p-6">
                           <div className="space-y-6">
                             <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                              <img 
-                                src={project.image} 
-                                alt={project.title} 
+                              <img
+                                src={project.image}
+                                alt={project.title}
                                 className="w-full h-full object-cover"
                               />
                             </div>
@@ -165,30 +204,44 @@ export default function Projects() {
                               <p className="text-slate-600 leading-relaxed text-lg">
                                 {project.description}
                               </p>
-                              
-                              <h4 className="text-lg font-bold pt-2 border-t border-slate-100">Project Highlights</h4>
+
+                              <h4 className="text-lg font-bold pt-2 border-t border-slate-100">
+                                Project Highlights
+                              </h4>
                               <div className="grid grid-cols-2 gap-4">
                                 {project.gallery.map((img, i) => (
-                                  <div key={i} className="aspect-square rounded-lg overflow-hidden border border-slate-100 shadow-sm">
-                                    <img src={img} alt={`${project.title} gallery ${i}`} className="w-full h-full object-cover" />
+                                  <div
+                                    key={i}
+                                    className="aspect-square rounded-lg overflow-hidden border border-slate-100 shadow-sm"
+                                  >
+                                    <img
+                                      src={img}
+                                      alt={`${project.title} gallery ${i}`}
+                                      className="w-full h-full object-cover"
+                                    />
                                   </div>
                                 ))}
                               </div>
 
                               <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
-                                <h4 className="font-bold mb-2">Impact Summary</h4>
+                                <h4 className="font-bold mb-2">
+                                  Impact Summary
+                                </h4>
                                 <ul className="space-y-2 text-sm text-slate-600">
                                   <li className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                                    Directly benefited over 5,000 community members.
+                                    Directly benefited over 5,000 community
+                                    members.
                                   </li>
                                   <li className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                                    Supported by 50+ medical volunteers annually.
+                                    Supported by 50+ medical volunteers
+                                    annually.
                                   </li>
                                   <li className="flex items-center gap-2">
                                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                                    Expanding to three new states in the coming year.
+                                    Expanding to three new states in the coming
+                                    year.
                                   </li>
                                 </ul>
                                 <Link href="/contact" className="block mt-6">
@@ -204,7 +257,11 @@ export default function Projects() {
                     </Dialog>
 
                     <Link href="/contact">
-                      <Button variant="outline" size="sm" className="w-full justify-between group-hover:bg-primary group-hover:text-white group-hover:border-primary">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full justify-between bg-primary text-white border-primary"
+                      >
                         Support
                         <span className="text-lg">→</span>
                       </Button>
@@ -221,12 +278,19 @@ export default function Projects() {
       <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/10 rounded-l-full blur-3xl"></div>
         <div className="container-custom relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-display mb-6">Help Us Do More</h2>
+          <h2 className="text-3xl md:text-4xl text-white font-display mb-6">
+            Help Us Do More
+          </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            Every donation goes directly towards funding screenings and treatment for those who need it most.
+            Every donation goes directly towards funding screenings and
+            treatment for those who need it most.
           </p>
           <Link href="/contact">
-            <Button size="lg" variant="default" className="rounded-full shadow-lg shadow-accent/20 px-10">
+            <Button
+              size="lg"
+              variant="default"
+              className="rounded-full shadow-lg shadow-accent/20 px-10"
+            >
               Donate to CCI
             </Button>
           </Link>

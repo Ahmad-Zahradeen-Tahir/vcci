@@ -23,8 +23,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-slate-400 leading-relaxed">
-              Dedicated to reducing the cancer burden in Nigeria through
-              awareness, screening, and patient support initiatives.
+              dedicated to providing equitable access to quality cancer
+              prevention and care to underserved communities
             </p>
             <div className="flex gap-4">
               {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
@@ -36,7 +36,7 @@ export function Footer() {
                   >
                     <Icon size={16} />
                   </a>
-                )
+                ),
               )}
             </div>
           </div>

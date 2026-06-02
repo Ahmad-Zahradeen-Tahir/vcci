@@ -5,19 +5,21 @@ import { Button } from "../components/ui/buttona";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
 import greet from "../../public/assets/p2.jpeg";
 import pt from "../../public/assets/pt1.jpeg";
+import backgb from "../../public/assets/backgb.jpeg";
+import prtfg from "../../public/assets/prntfge.jpeg";
 
 // Fade in animation variant
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2 }
-  }
+    transition: { staggerChildren: 0.2 },
+  },
 };
 
 export default function Home() {
@@ -25,7 +27,10 @@ export default function Home() {
     <>
       <Helmet>
         <title>Home | Comprehensive Cancer Initiative</title>
-        <meta name="description" content="Dedicated to reducing the cancer burden in Nigeria through awareness, screening, and patient support." />
+        <meta
+          name="description"
+          content="Dedicated to reducing the cancer burden in Nigeria through awareness, screening, and patient support."
+        />
       </Helmet>
 
       {/* Hero Section */}
@@ -37,7 +42,7 @@ export default function Home() {
 
         <div className="container-custom relative z-10 pt-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               initial="hidden"
               animate="visible"
               variants={staggerContainer}
@@ -48,24 +53,36 @@ export default function Home() {
                   Together We Can Beat Cancer
                 </span>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl leading-tight text-slate-900 font-display">
-                  Hope for a <span className="text-primary">Healthier</span> Future
+                  Hope for a <span className="text-primary">Healthier</span>{" "}
+                  Future
                 </h1>
               </motion.div>
-              
-              <motion.p variants={fadeIn} className="text-xl text-slate-600 leading-relaxed max-w-lg">
-                We are dedicated to reducing the cancer burden in Nigeria through early detection, 
-                comprehensive awareness, and compassionate patient support.
+
+              <motion.p
+                variants={fadeIn}
+                className="text-xl text-slate-600 leading-relaxed max-w-lg"
+              >
+                We are dedicated to Cancer Prevention, Health Systems
+                Strengthening (TeleOncology Hub) , Cancer Advocacy and Community
+                Oncology
               </motion.p>
-              
+
               <motion.div variants={fadeIn} className="flex flex-wrap gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="rounded-full shadow-xl shadow-primary/20">
+                  <Button
+                    size="lg"
+                    className="rounded-full shadow-xl shadow-primary/20"
+                  >
                     Get Involved
                   </Button>
                 </Link>
                 <Link href="/about">
-                  <Button variant="outline" size="lg" className="rounded-full group">
-                    Learn More 
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="rounded-full group"
+                  >
+                    Learn More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -73,7 +90,7 @@ export default function Home() {
             </motion.div>
 
             {/* Hero Image Grid */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -83,18 +100,18 @@ export default function Home() {
                 <div className="space-y-4 mt-12">
                   {/* Doctor/Patient Interaction */}
                   <div className="h-64 rounded-2xl overflow-hidden shadow-2xl relative group">
-                    <img 
-                      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" 
-                      alt="Doctor holding patient hand" 
+                    <img
+                      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+                      alt="Doctor holding patient hand"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   {/* Community Awareness */}
                   <div className="h-48 rounded-2xl overflow-hidden shadow-xl relative group">
-                    <img 
+                    <img
                       src={pt}
-                      alt="Community health awareness" 
+                      alt="Community health awareness"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
@@ -102,17 +119,17 @@ export default function Home() {
                 <div className="space-y-4">
                   {/* Medical Screening */}
                   <div className="h-48 rounded-2xl overflow-hidden shadow-xl relative group">
-                    <img 
-                      src={greet} 
-                      alt="Medical screening" 
+                    <img
+                      src={prtfg}
+                      alt="Medical screening"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
                   {/* Happy survivor/positive imagery */}
                   <div className="h-64 rounded-2xl overflow-hidden shadow-2xl relative group">
-                    <img 
-                      src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=800&q=80" 
-                      alt="Smiling woman" 
+                    <img
+                      src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=800&q=80"
+                      alt="Smiling woman"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-accent/20 group-hover:bg-transparent transition-colors duration-500" />
@@ -135,7 +152,7 @@ export default function Home() {
               { icon: Heart, number: "1200+", label: "Patients Supported" },
               { icon: Activity, number: "15+", label: "Medical Partners" },
             ].map((stat, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -144,7 +161,9 @@ export default function Home() {
                 className="p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/10"
               >
                 <stat.icon className="w-8 h-8 mx-auto mb-4 text-accent" />
-                <div className="text-4xl font-bold font-display mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold font-display mb-2">
+                  {stat.number}
+                </div>
                 <div className="text-blue-100">{stat.label}</div>
               </motion.div>
             ))}
@@ -161,27 +180,36 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="p-8 rounded-3xl bg-blue-50 border border-blue-100 relative overflow-hidden group"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full transition-transform group-hover:scale-110" />
               <h3 className="text-2xl mb-4 text-primary">Our Mission</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                To create a comprehensive ecosystem for cancer control in Nigeria by promoting awareness,
-                facilitating early detection, and advocating for affordable treatment and palliative care.
+                We at CCI are dedicated to reducing the burden of cancer in
+                Nigeria through a comprehensive approach that includes advocacy,
+                cancer prevention, education, health systems strengthening ,
+                health promotion, innovative research , enabling standard
+                equitable oncology care, patient navigation, Telehealth and
+                community oncology
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="p-8 rounded-3xl bg-pink-50 border border-pink-100 relative overflow-hidden group"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full transition-transform group-hover:scale-110" />
               <h3 className="text-2xl mb-4 text-accent">Our Vision</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                A Nigeria where cancer is no longer a death sentence, but a manageable condition 
-                with high survival rates through equitable access to quality healthcare.
+                To a future where everyone in Nigeria has access to equitable
+                cancer information, cancer prevention , prompt diagnosis,
+                standard oncology care and optimum survivorship care. Through
+                collaborative partnerships, innovative research, innovative
+                health education programs, community oncology , telehealth we
+                shall build a future where health inequities and cancer
+                disparities are eliminated.
               </p>
             </motion.div>
           </div>
@@ -192,9 +220,9 @@ export default function Home() {
       <section className="section-padding relative overflow-hidden">
         {/* Background image with overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80" 
-            alt="Team holding hands" 
+          <img
+            src={backgb}
+            alt="Team holding hands"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/80" />
@@ -207,19 +235,29 @@ export default function Home() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto space-y-8"
           >
-            <h2 className="text-4xl md:text-5xl font-display">Join the Fight Against Cancer</h2>
+            <h2 className="text-4xl md:text-5xl font-display text-white">
+              Join the Fight Against Cancer
+            </h2>
             <p className="text-xl text-slate-300">
-              Your support can save lives. Whether through donation, volunteering, or partnership,
-              you can make a difference today.
+              Your support can save lives. Whether through donation,
+              volunteering, or partnership, you can make a difference today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Link href="/contact">
-                <Button variant="accent" size="lg" className="rounded-full min-w-[160px]">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  className="rounded-full min-w-[160px]"
+                >
                   Donate Now
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="rounded-full border-white text-white hover:bg-white/10 min-w-[160px]">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full border-white text-white hover:bg-white/10 min-w-[160px]"
+                >
                   Partner With Us
                 </Button>
               </Link>

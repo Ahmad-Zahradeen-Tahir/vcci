@@ -40,7 +40,7 @@ export default function Contact() {
                   {
                     icon: MapPin,
                     title: "Visit Us",
-                    content: "123 Health Avenue, Victoria Island, Lagos, Nigeria",
+                    content: "CCI Threshold Plaza, Plot C47, Gwarinpa – FCT Abuja.",
                   },
                   {
                     icon: Phone,
@@ -85,7 +85,7 @@ export default function Contact() {
               {/* Map Embed */}
               <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 h-80 bg-slate-100 relative">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126841.04259837775!2d3.2847683935272373!3d6.54805503049658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1714521456208!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps?q=Cancer%20Consciousness%20Initiative%20Threshold%20Plaza%20Plot%20C47%20Gwarinpa%20FCT%20Abuja&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
