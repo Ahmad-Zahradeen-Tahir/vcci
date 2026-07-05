@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Comprehensive Cancer Initiative</title>
+        <title>Contact Us | Cancer Consciousness Initiative</title>
         <meta name="description" content="Get in touch with CCI Nigeria. We'd love to hear from you." />
       </Helmet>
 
@@ -51,8 +51,8 @@ export default function Contact() {
                   {
                     icon: Mail,
                     title: "Email Us",
-                    content: "info@ccinitiativenig.org",
-                    link: "mailto:info@ccinitiativenig.org"
+                    content: "cciinitiativenig1@gmail.com",
+                    link: "mailto:cciinitiativenig1@gmail.com"
                   },
                   {
                     icon: Clock,

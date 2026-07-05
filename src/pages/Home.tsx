@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "../components/ui/buttona";
 import { ArrowRight, Activity, Users, Calendar, Heart } from "lucide-react";
-// import greet from "../../public/assets/p2.jpeg";
+import nfp1 from "../../public/assets/nfp1.jpeg";
 import pt from "../../public/assets/pt1.jpeg";
 import backgb from "../../public/assets/backgb.jpeg";
 import prtfg from "../../public/assets/prntfge.jpeg";
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Home | Comprehensive Cancer Initiative</title>
+        <title>Cancer Consciousness Initiative</title>
         <meta
           name="description"
           content="Dedicated to reducing the cancer burden in Nigeria through awareness, screening, and patient support."
@@ -128,7 +128,7 @@ export default function Home() {
                   {/* Happy survivor/positive imagery */}
                   <div className="h-64 rounded-2xl overflow-hidden shadow-2xl relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=800&q=80"
+                      src={nfp1}
                       alt="Smiling woman"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />

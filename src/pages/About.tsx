@@ -22,7 +22,7 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Comprehensive Cancer Initiative</title>
+        <title>About Us | Cancer Consciousness Initiative</title>
         <meta
           name="description"
           content="Learn about the history, team, and goals of CCI Nigeria."

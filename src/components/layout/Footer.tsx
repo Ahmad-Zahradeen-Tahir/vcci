@@ -91,7 +91,7 @@ export function Footer() {
                   href="mailto:cciInitiativenig@gmail.com"
                   className="text-slate-400 hover:text-white"
                 >
-                  cciInitiativenig@gmail.com
+                  cciInitiativenig1@gmail.com
                 </a>
               </li>
             </ul>

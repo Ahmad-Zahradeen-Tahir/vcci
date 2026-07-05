@@ -116,7 +116,7 @@ export default function Projects() {
   return (
     <>
       <Helmet>
-        <title>Our Projects | Comprehensive Cancer Initiative</title>
+        <title>Our Projects | Cancer Consciousness Initiative</title>
         <meta
           name="description"
           content="Explore our initiatives in cancer screening, awareness, and patient support."
