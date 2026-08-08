@@ -12,6 +12,16 @@ import saad from "../../public/assets/saad.jpeg";
 import fbello from "../../public/assets/fbello.jpeg";
 import aishashehu from "../../public/assets/aishashehu.jpeg";
 import every1 from "../../public/assets/evry1.jpg";
+import partner01 from "../../public/assets/partner01.jpeg";
+import partner02 from "../../public/assets/partner02.jpeg";
+import partner03 from "../../public/assets/partner03.jpeg";
+import partner04 from "../../public/assets/partner04.jpeg";
+import partner05 from "../../public/assets/partner05.jpg";
+import partner06 from "../../public/assets/partner06.png";
+import partner07 from "../../public/assets/partner07.jpeg";
+import partner08 from "../../public/assets/partner08.jpeg";
+import partner09 from "../../public/assets/partner09.jpeg";
+import partner10 from "../../public/assets/partner10.jpeg";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -225,6 +235,91 @@ export default function About() {
                 View All Staff <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+      {/* Partners Section */}
+      <section className="section-padding bg-slate-50">
+        <div className="container-custom">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-display mb-4">
+              Our Partners
+            </h2>
+            <p className="text-slate-600">
+              The trusted partners driving our mission.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-around gap-y-8">
+            {[
+              {
+                name: "Prof. Sa'ad Ahmed",
+                img: partner01,
+              },
+              {
+                name: "Dr. Hannatu Ayuba Usman",
+                img: partner02,
+              },
+              {
+                name: "Aminu Ayama",
+                img: partner03,
+              },
+              {
+                name: "Dr. Aisha Shehu Adamu",
+                img: partner04,
+              },
+              {
+                name: "Dr. Fatima Bello",
+                img: partner05,
+              },
+              {
+                name: "Dr. Nicholas Kwampi",
+                img: partner06,
+              },
+              {
+                name: "Amina Ayuba",
+                img: partner07,
+              },
+              {
+                name: "Amina Ayuba",
+                img: partner08,
+              },
+              {
+                name: "Amina Ayuba",
+                img: partner09,
+              },
+              {
+                name: "Amina Ayuba",
+                img: partner10,
+              },
+              
+            ].map((member, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="group"
+              >
+                <div className="w-full sm:w-[210px] relative overflow-hidden rounded-2xl mb-4 aspect-[3/3]">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    className="w-full h-full  transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
           </motion.div>
         </div>
       </section>
