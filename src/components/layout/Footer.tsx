@@ -50,7 +50,7 @@ export function Footer() {
                 { label: "About Us", href: "/about" },
                 { label: "Our Projects", href: "/projects" },
                 { label: "Get Involved", href: "/contact" },
-                { label: "Donate", href: "/contact" },
+                { label: "Donate", href: "https://givese.com/donate/ccinitiativenig" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link

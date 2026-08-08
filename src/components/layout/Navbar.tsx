@@ -39,10 +39,12 @@ export function Navbar() {
         {/* Logo Area */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
-             <img src={logo} width={200} />
+            <img src={logo} width={200} />
           </div>
           <div className="flex flex-col">
-            <span className={`text-xl font-display font-bold leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900 md:text-slate-900'}`}>
+            <span
+              className={`text-xl font-display font-bold leading-none ${scrolled ? "text-slate-900" : "text-slate-900 md:text-slate-900"}`}
+            >
               CCI
             </span>
             <span className="text-[0.65rem] uppercase tracking-wider font-semibold text-primary">
@@ -72,8 +74,21 @@ export function Navbar() {
               )}
             </Link>
           ))}
-          <Link href="/contact">
-            <Button variant="accent" size="sm" className="rounded-full px-6">
+          <Link
+            href="https://givese.com/donate/ccinitiativenig"
+            target="_blank"
+          >
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://givese.com/donate/ccinitiativenig",
+                  "_blank",
+                )
+              }
+              variant="accent"
+              size="sm"
+              className="rounded-full px-6"
+            >
               Donate Now
             </Button>
           </Link>
@@ -113,11 +128,19 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-slate-100">
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <Button variant="accent" className="w-full justify-center">
-                    Donate Now
-                  </Button>
-                </Link>
+                <Button
+                  variant="accent"
+                  className="w-full justify-center"
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.open(
+                      "https://givese.com/donate/ccinitiativenig",
+                      "_blank",
+                    );
+                  }}
+                >
+                  Donate Now
+                </Button>
               </div>
             </div>
           </motion.div>

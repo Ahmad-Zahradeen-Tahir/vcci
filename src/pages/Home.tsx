@@ -147,9 +147,9 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { icon: Users, number: "5000+", label: "People Screened" },
-              { icon: Calendar, number: "50+", label: "Outreach Events" },
-              { icon: Heart, number: "1200+", label: "Patients Supported" },
+              { icon: Users, number: "8,500,000+", label: "Travel Cost Saved" },
+              { icon: Calendar, number: "3,600+", label: "Hours of Travel saved" },
+              { icon: Heart, number: "211+", label: "Patients Supported" },
               { icon: Activity, number: "15+", label: "Medical Partners" },
             ].map((stat, index) => (
               <motion.div
@@ -243,8 +243,9 @@ export default function Home() {
               volunteering, or partnership, you can make a difference today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/contact">
+              <Link href="https://givese.com/donate/ccinitiativenig">
                 <Button
+                onClick={() => window.open("https://givese.com/donate/ccinitiativenig", "_blank")}
                   variant="accent"
                   size="lg"
                   className="rounded-full min-w-[160px]"

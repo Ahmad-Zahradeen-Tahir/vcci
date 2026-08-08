@@ -244,8 +244,11 @@ export default function Projects() {
                                     year.
                                   </li>
                                 </ul>
-                                <Link href="/contact" className="block mt-6">
-                                  <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6 rounded-xl shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                                <Link href="https://givese.com/donate/ccinitiativenig" className="block mt-6">
+                                  <Button
+                                    onClick={() => window.open("https://givese.com/donate/ccinitiativenig", "_blank")}
+                                    className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-6 rounded-xl shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                                  >
                                     Donate to this Project
                                   </Button>
                                 </Link>
@@ -256,8 +259,9 @@ export default function Projects() {
                       </DialogContent>
                     </Dialog>
 
-                    <Link href="/contact">
+                    <Link href="https://givese.com/donate/ccinitiativenig" className="block">
                       <Button
+                        onClick={() => window.open("https://givese.com/donate/ccinitiativenig", "_blank")}
                         variant="outline"
                         size="sm"
                         className="w-full justify-between bg-primary text-white border-primary"
