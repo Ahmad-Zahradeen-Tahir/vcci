@@ -25,6 +25,7 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1584362924004-23340393f3bd?w=400&q=80",
       "https://images.unsplash.com/photo-1579154234411-7801f0107583?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
     ],
   },
   {
@@ -38,6 +39,7 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80",
       "https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
     ],
   },
   {
@@ -52,6 +54,7 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&q=80",
       "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
     ],
   },
   {
@@ -66,6 +69,8 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&q=80",
       "https://images.unsplash.com/photo-1459183885447-553a41af6844?w=400&q=80",
+      "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&q=80",
+      "https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&q=80",
     ],
   },
   {
@@ -80,6 +85,8 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1532187875605-2fe358a3d46a?w=400&q=80",
       "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
     ],
   },
   {
@@ -93,6 +100,9 @@ const projects = [
       "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
       "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
     ],
   },
@@ -108,6 +118,7 @@ const projects = [
     gallery: [
       "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
       "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80",
+      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&q=80",
     ],
   },
 ];
@@ -208,8 +219,9 @@ export default function Projects() {
                               <h4 className="text-lg font-bold pt-2 border-t border-slate-100">
                                 Project Highlights
                               </h4>
-                              <div className="grid grid-cols-2 gap-4">
-                                {project.gallery.map((img, i) => (
+                              <div className="marquee-container">
+                                <div className="marquee-track">
+                                {[...project.gallery, ...project.gallery].map((img, i) => (
                                   <div
                                     key={i}
                                     className="aspect-square rounded-lg overflow-hidden border border-slate-100 shadow-sm"
@@ -221,6 +233,7 @@ export default function Projects() {
                                     />
                                   </div>
                                 ))}
+                              </div>
                               </div>
 
                               <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">

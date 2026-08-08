@@ -63,7 +63,7 @@ export default function Home() {
                 className="text-xl text-slate-600 leading-relaxed max-w-lg"
               >
                 We are dedicated to Cancer Prevention, Health Systems
-                Strengthening (TeleOncology Hub) , Cancer Advocacy and Community
+                Strengthening (TeleOncology Hub) , Cancer Advocacy, Humanitarian Cancer Care and Community
                 Oncology
               </motion.p>
 
