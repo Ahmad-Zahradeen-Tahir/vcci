@@ -147,7 +147,7 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { icon: Users, number: "8,500,000+", label: "Travel Cost Saved" },
+              { icon: Users, number: "8,500,000+", label: "Travel Cost Saved (₦)" },
               { icon: Calendar, number: "3,600+", label: "Hours of Travel saved" },
               { icon: Heart, number: "211+", label: "Patients Supported" },
               { icon: Activity, number: "15+", label: "Medical Partners" },
